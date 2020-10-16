@@ -8,7 +8,7 @@ chmod 600 /home/$USERNAME/.ssh/authorized_keys
 
 # Software I need and updates
 dnf update -y
-dnf install rust gcc vim nvim -y
+dnf install rust cargo gcc vim nvim -y
 
 # Firewall -- separate task
 dnf install firewalld -y
