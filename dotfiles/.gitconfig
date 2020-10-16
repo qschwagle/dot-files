@@ -1,0 +1,16 @@
+[config]
+	        editor = nvim
+[difftool]
+	        prompt = true
+[diff]
+	        tool = nvimdiff
+[difftool "nvimdiff"]
+	        cmd = "nvim -d \"$LOCAL\" \"$REMOTE\""
+[user]
+	        name = Quinton Schwagle
+		email = qschwagle@gmail.com
+[core]
+	        tool = nvim
+		editor = nvim
+[push]
+	        default = matching
