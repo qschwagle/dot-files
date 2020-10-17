@@ -1,14 +1,13 @@
 USERNAME=qschwagle
 
 # create the user and modify add the authorized keys
-useradd -G wheel $USERNAME
-cp -r ~/.ssh /home/$USERNAME
-chown -r $USERNAME:$USERNAME /home/$USERNAME/.ssh
-chmod 600 /home/$USERNAME/.ssh/authorized_keys
+#cp -r ~/.ssh /home/$USERNAME
+#chown -r $USERNAME:$USERNAME /home/$USERNAME/.ssh
+#chmod 600 /home/$USERNAME/.ssh/authorized_keys
 
 # Software I need and updates
 dnf update -y
-dnf install rust cargo gcc vim nvim -y
+dnf install rust cargo gcc vim neovim -y
 
 # Firewall -- separate task
 dnf install firewalld -y
