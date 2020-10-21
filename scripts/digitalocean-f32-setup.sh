@@ -6,14 +6,14 @@ USERNAME=qschwagle
 #chmod 600 /home/$USERNAME/.ssh/authorized_keys
 
 # Software I need and updates
-dnf update -y
-dnf install rust cargo gcc vim neovim -y
+sudo dnf update -y
+sudo dnf install rust cargo gcc vim neovim -y
 
 # Firewall -- separate task
-dnf install firewalld -y
-firwall-cmd --add-server=sshd
-systemctl enable firewalld
-systemctl start firewalld
+sudo dnf install firewalld -y
+sudo firwall-cmd --add-server=sshd
+sudo systemctl enable firewalld
+sudo systemctl start firewalld
 
 # Still need to remove root, disable passwords, and enable keys on ssh
 
