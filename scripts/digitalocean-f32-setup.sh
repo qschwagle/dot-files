@@ -7,7 +7,7 @@ USERNAME=qschwagle
 
 # Software I need and updates
 sudo dnf update -y
-sudo dnf install rust cargo gcc vim neovim clang -y
+sudo dnf install rust cargo gcc vim neovim clang cmake -y
 
 # Firewall -- separate task
 sudo dnf install firewalld -y
