@@ -16,6 +16,8 @@ Plug 'jackguo380/vim-lsp-cxx-highlight'
 
 Plug 'rhysd/vim-clang-format'
 
+Plug 'embear/vim-localvimrc'
+
 call plug#end()
 set number
 
@@ -61,5 +63,14 @@ nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
-set exrc
-set secure
+
+" use <tab> for completion
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~ '\s'
+endfunction
+
+inoremap <silent><expr> <Tab>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<Tab>" :
+      \ coc#refresh()

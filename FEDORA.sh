@@ -1,4 +1,5 @@
 #!/usr/bin/env zsh
+# Fedora.sh 
 
 if [[ -z $STOW_FOLDERS ]]; then
   STOW_FOLDERS="nvim,git,zsh"

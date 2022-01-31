@@ -11,6 +11,6 @@
 				"index": { "onChange": true },
 				"highlight": { "lsRanges": true }
 			}
-		}
+		},
 	}
 }

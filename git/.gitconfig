@@ -1,7 +1,7 @@
 [config]
 	        editor = nvim
 [difftool]
-	        prompt = true
+		prompt = false
 [diff]
 	        tool = nvimdiff
 [difftool "nvimdiff"]
@@ -14,3 +14,5 @@
 		editor = nvim
 [push]
 	        default = matching
+[merge]
+	tool = nvimdiff
