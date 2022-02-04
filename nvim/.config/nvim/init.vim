@@ -30,6 +30,8 @@ let g:lightline = {
 	\'colorscheme' : 'onedark',
 \}
 
+" Default leader key is: \
+
 
 " telescope config
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
