@@ -35,28 +35,9 @@ let g:lightline = {
 \}
 
 " Default leader key is: \
-
-
-" telescope config
-nnoremap <leader>ff <cmd>Telescope find_files<cr>
-nnoremap <leader>fg <cmd>Telescope live_grep<cr>
-nnoremap <leader>fb <cmd>Telescope buffers<cr>
-nnoremap <leader>fn <cmd>Telescope help_tags<cr>
-
 let g:cpp_class_scope_highlight = 1
 let g:cpp_member_variable_highlight = 1
 let g:cpp_class_decl_highlight = 1
-
-" Disabiling cpp lint due to style incompatibility 
-" let g:syntastic_cpp_checkers = ['cpplint']
-" let g:syntastic_c_checkers = ['cpplint']
-" let g:syntastic_cpp_cpplint_exec = 'cpplint'
-
-" do we want to check on opening and on wq?
-let g:syntastic_check_on_open = 0
-let g:syntastic_check_on_wq = 0
-
-nnoremap <Leader>f :<C-u>ClangFormat<CR>
 
 " coc config 
 set updatetime=300
