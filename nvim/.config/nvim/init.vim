@@ -22,6 +22,9 @@ Plug 'rhysd/vim-clang-format'
 
 Plug 'embear/vim-localvimrc'
 
+" Automatic Session Managment
+Plug 'rmagatti/auto-session'
+
 call plug#end()
 set number
 
