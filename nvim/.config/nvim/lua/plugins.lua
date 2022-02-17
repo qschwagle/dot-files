@@ -4,5 +4,8 @@ require 'tree_config'
 require 'clang_format_config'
 require 'coc_config'
 require 'auto_session_config'
+require 'dap_config'
+require 'dap_ui_config'
+require 'tabline_nvim_config'
 
 

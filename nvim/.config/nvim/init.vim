@@ -25,6 +25,20 @@ Plug 'embear/vim-localvimrc'
 " Automatic Session Managment
 Plug 'rmagatti/auto-session'
 
+" DAP plugin
+Plug 'mfussenegger/nvim-dap'
+
+" DAP UI
+Plug 'rcarriga/nvim-dap-ui'
+
+" Editor Config
+Plug 'editorconfig/editorconfig-vim'
+
+" Dependency for tabline.nvim
+Plug 'hoob3rt/lualine.nvim'
+
+Plug 'kdheepak/tabline.nvim'
+
 call plug#end()
 set number
 
