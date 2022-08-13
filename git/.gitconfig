@@ -12,7 +12,10 @@
 [core]
 	        tool = nvim
 		editor = nvim
+	autocrlf = input
 [push]
 	        default = matching
 [merge]
 	tool = nvimdiff
+[init]
+	defaultBranch = master

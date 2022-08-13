@@ -24,6 +24,8 @@ if [[ `uname` == "Darwin" ]]; then
 
 	EDITOR=nvim
 	export EDITOR
+
+	export PATH=/usr/local/opt/bison/bin:/usr/local/opt/gettext/bin:$PATH
 fi
 
 
