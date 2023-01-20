@@ -127,3 +127,18 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+export PATH="/opt/homebrew/opt/openssl@3/bin:$PATH"
+
+# opam configuration
+[[ ! -r /Users/qschwagle/.opam/opam-init/init.zsh ]] || source /Users/qschwagle/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
+
+path+='/home/qschwagle/.ghcup/bin'
+export PATH
+
+cflags+='-I/opt/homebrew/include'
+export CFLAGS
+
+export PATH="/usr/local/share/dotnet/x64:$PATH"
+
+export PATH="/Users/qschwagle/go/bin:$PATH"
+
